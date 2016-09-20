@@ -1,0 +1,76 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+#wrapper {
+    background: url(../img/bg_block.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.logo {
+    margin: 200px 0 216px 0;
+}
+
+.logo img {
+    max-width: 300px;
+    max-height: 140px;
+    display: block;
+    margin: 0 auto;
+}
+
+.content_left a {
+    margin-right: 85px;
+    float: right;
+}
+
+.content_right a {
+    margin-left: 85px;
+    float: left;
+}
+
+.content_left a,
+.content_right a {
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    border: 3px solid white;
+    padding: 18px 81px 17px 81px;
+}
+
+.content_right a:hover,
+.content_left a:hover {
+    text-decoration: none !important;
+    color: #fff;
+    background: rgba(255, 255, 255, 0.5);
+}
+/*медиа запросы*/
+@media screen and (min-width:100px) and (max-width:767px) {
+    #wrapper {
+        height: initial;
+        padding-bottom: 50px;
+    }
+    .content_left a,
+    .content_right a {
+        margin: 0 !important;
+    }
+}
+
+@media only screen and (min-width: 100px) and (max-width: 650px) {
+    html {
+        -webkit-text-size-adjust: none;
+    }
+    .content_left a,
+    .content_right a {
+        padding: 18px 33px 17px 33px !important;
+        margin: 0 !important;
+    }
+}
